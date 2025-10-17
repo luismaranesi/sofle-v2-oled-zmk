@@ -1,0 +1,11 @@
+/* LEFT: central/master via BLE */
+&split {
+    compatible = "zmk,split-bluetooth";
+    status = "okay";
+    role = "central";
+};
+
+/* Desabilita o split-serial herdado do shield base */
+&split_serial {
+    status = "disabled";
+};
