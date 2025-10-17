@@ -1,0 +1,11 @@
+/* RIGHT: peripheral */
+&split {
+    compatible = "zmk,split-serial";
+    status = "okay";
+    role = "peripheral";
+    uart {
+        status = "okay";
+        rx-pin = <6>;   /* escuta em P0.06 */
+        tx-pin = <8>;   /* transmite em P0.08 */
+    };
+};
