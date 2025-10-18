@@ -1,11 +1,11 @@
-/* RIGHT: peripheral via BLE */
+/* RIGHT: peripheral por BLE */
 &split {
     compatible = "zmk,split-bluetooth";
     status = "okay";
     role = "peripheral";
 };
 
-/* Desabilita o split-serial herdado do shield base */
+/* garante que TRRS/serial fique desligado */
 &split_serial {
     status = "disabled";
 };
